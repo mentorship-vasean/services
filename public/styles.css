@@ -1,169 +1,363 @@
-body{
-    background-color: #252B42;
-    padding: 0 80px;
-    max-width: 1440px;
-    margin: 0 auto;
+body {
+  background-color: #252b42;
+  /* padding: 0 80px; */
+  margin: 0 auto;
 }
-
+/* Start Header */
 header.header__wrapper {
-    width: 100%;
-    max-width: 1440px;
-    height: 91px;
-    /* position: fixed;
-    top: 0; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-family: Montserrat;
-    color: #fff;
+  width: 100%;
+  height: 91px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0 95px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Montserrat;
+  color: #fff;
 }
 header .header__logo {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
-    letter-spacing: .1px;
-    /* color: #FFFFFF; */
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  /* color: #FFFFFF; */
 }
 
-header nav ul.header__menu-items{
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: .2px;
+header nav ul.header__menu-items {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
 }
 
 header .header__button-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
 }
 
 header .header__button-wrapper a.header__button-login {
-    text-decoration: none;
-    color: inherit;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 22px;
-    letter-spacing: .2px;
-    color: #23A6F0;
-} 
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  color: #23a6f0;
+}
 
 header .header__button-wrapper button.header__button-member {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 22px;
-    letter-spacing: .2px;
-    color: #FFFFFF;
-    background-color: #23A6F0;
-    border: none;
-    border-radius: 5px;
-    height: 52px;
-    width: 100%;
-    padding: 0px 25px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  background-color: #23a6f0;
+  border: none;
+  border-radius: 5px;
+  height: 52px;
+  width: 100%;
+  padding: 0px 25px;
 }
-footer{
-    color: #fff;
-    font-family: Montserrat;
-    font-weight: 100;
+/* End Header */
+
+/* Hero Start */
+section.hero__wrapper {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Montserrat;
 }
-.footer__heading {
+section div.hero__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 685px;
+  gap: 40px;
+}
+section div.hero__text-wrapper h1.hero__heading {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+}
+
+section div.hero__text-wrapper p.hero__text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  max-width: 75%;
+}
+
+section div.hero__text-wrapper div.hero__button-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-}
-.footer__heading-brand {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 700;
-    letter-spacing: .1px;
-}
-
-.footer__heading-icons__wrapper {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    
-}
-.footer__heading-icon i {
-    color: #23A6F0;
-    font-size: 24px;   
-}
-hr.footer__line {
-    border: 1px solid #E6E6E6;
-    margin: 53px 0;
-}
-.footer__menu__wrapper {
-    display: flex;
-    flex-direction: row;
-    gap: 59px;
-}
-.footer__menu__wrapper .footer__menu-items__wrapper h6 {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: .1px;
-    margin-bottom: 20px;
-    white-space: nowrap;
-}
-.footer__menu__wrapper .footer__menu-items__wrapper ul.footer__menu-lists {
-    display: flex;
-    flex-direction: column;
     gap: 10px;
 }
-.footer__menu__wrapper .footer__menu-lists .footer__menu-lists__items {
+section div.hero__text-wrapper div.hero__button-wrapper button {
+    border-radius: 37px;
+    padding: 15px 36px;
+    height: 52px;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: .2px;
+
+}
+
+section div.hero__text-wrapper div.hero__button-wrapper button.hero__button-quote {
+    background: #23a6f0;
+    border: none;
+}
+section div.hero__text-wrapper div.hero__button-wrapper button.hero__button-quote:hover {
+    background: rgba(35, 166, 240, .5);
+}
+
+section div.hero__text-wrapper div.hero__button-wrapper button.hero__button-learn {
+    border: 1px solid #fff;
+}
+
+section div.hero__text-wrapper div.hero__button-wrapper button.hero__button-learn:hover {
+    background-color: rgb(180, 180, 180);
+    color: black;
+}
+/* Hero End */
+
+
+
+/* Client Start */
+section.client__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+    color: #fff;
+    width: 100%;
+}
+section.client__wrapper .client__heading-wrapper {
+    text-align: center;
+    margin-bottom: 55px;
+    
+}
+section.client__wrapper h2.client__heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: .2px;
+    margin-bottom: 12px;
+}
+
+section.client__wrapper p.client__text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: .2px; 
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section.client__wrapper .client__cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 175px;
+}
+
+section.client__wrapper .client__cards-wrapper .client__cards {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    color: black;
+}
+section.client__wrapper .client__cards-wrapper .client__cards .client__card-text__wrapper {
+    padding: 16px 25px;
+}
+
+section.client__wrapper .client__cards-wrapper .client__cards .client__card-text__wrapper h3.client__name {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: .1px;
+}
+section.client__wrapper .client__cards-wrapper .client__cards .client__card-text__wrapper p.client__title {
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: .2px;
+    color: #737373;
+}
+
+section.client__wrapper .client__cards-wrapper .client__cards .client__card-text__wrapper div.client__rating{
+    margin: 8px 0;
+}
+section.client__wrapper .client__cards-wrapper .client__cards .client__card-text__wrapper div.client__rating i{
+    margin: 12px 0;
+    color: #F3CD03;
+}
+section.client__wrapper .client__cards-wrapper .client__cards .client__card-text__wrapper p.client__feedback {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: .2px;
+    color: #737373;
+}
+
+
+/* Client End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Footer */
+footer {
+  color: #fff;
+  font-family: Montserrat;
+  font-weight: 100;
+}
+.footer__heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__heading-brand {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
+.footer__heading-icons__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.footer__heading-icon i {
+  color: #23a6f0;
+  font-size: 24px;
+}
+hr.footer__line {
+  border: 1px solid #e6e6e6;
+  margin: 53px 0;
+}
+.footer__menu__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
+.footer__menu__wrapper .footer__menu-items__wrapper h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+.footer__menu__wrapper .footer__menu-items__wrapper ul.footer__menu-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__menu__wrapper .footer__menu-lists .footer__menu-lists__items {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
 }
 .footer__menu__wrapper .footer__menu-items__wrapper form.footer__menu-form {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 62px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 62px;
 }
-.footer__menu__wrapper .footer__menu-items__wrapper form.footer__menu-form input {
-    box-sizing: content-box;
-    height: auto;
-    width: 75%;
-    color: #000;
-    border: 1px solid #E6E6E6;
-    border-radius: 5px 0 0 5px;
+.footer__menu__wrapper
+  .footer__menu-items__wrapper
+  form.footer__menu-form
+  input {
+  box-sizing: content-box;
+  height: auto;
+  width: 75%;
+  color: #000;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px 0 0 5px;
 }
-.footer__menu__wrapper .footer__menu-items__wrapper form.footer__menu-form button {
-    height: 100%;
-    width: 25%;
-    color: #fff;
-    font-size: 14px;
-    line-height: 28px;
-    letter-spacing: .2px;
-    align-items: center;
-    font-weight: 400;
-    background-color: #23A6F0;
-    border: 1px solid #E6E6E6;
-    box-sizing: border-box;
-    cursor: pointer;
-    border-radius: 0px 5px 5px 0px;
+.footer__menu__wrapper
+  .footer__menu-items__wrapper
+  form.footer__menu-form
+  button {
+  height: 100%;
+  width: 25%;
+  color: #fff;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  align-items: center;
+  font-weight: 400;
+  background-color: #23a6f0;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
 }
 .footer__menu__wrapper .footer__menu-items__wrapper p {
-    margin-top: 1px;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: .2px;
-    
+  margin-top: 1px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.2px;
 }
 footer p.disclaimer {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: .2px;
-    text-align: center;
-    margin-top: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  margin-top: 24px;
 }
+/* End Footer */
