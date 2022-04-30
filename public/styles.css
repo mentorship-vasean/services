@@ -141,6 +141,83 @@ section div.hero__text-wrapper div.hero__button-wrapper button.hero__button-lear
 }
 /* Hero End */
 
+/* Services Cards Start */
+section.services__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+section.services__wrapper .services__heading-wrapper {
+  text-align: center;
+  margin-bottom: 55px;
+  max-width: 600px;
+}
+section.services__wrapper .services__heading-wrapper h1.services__heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: .2px;
+  margin-bottom: 12px;
+}
+
+section.services__wrapper .services__heading-wrapper p.services__subHeading {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: .2px; 
+  max-width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+section.services__wrapper div.services__cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+section.services__wrapper div.services__cards-wrapper div.services__card-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: 25px;
+  max-width: 325px;
+}
+section.services__wrapper div.services__cards-wrapper div.services__card-wrapper img {
+height: 35px;
+width: 35px;
+object-fit: contain;
+object-position: center;
+}
+
+section.services__wrapper div.services__cards-wrapper div.services__card-wrapper div.services__card-text__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+section.services__wrapper div.services__cards-wrapper div.services__card-wrapper div.services__card-text__wrapper h1.services__card-header {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+section.services__wrapper div.services__cards-wrapper div.services__card-wrapper div.services__card-text__wrapper p.services__card-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: .2px;
+}
+
+/* Services Cards Ends*/
+
 
 
 /* Client Start */
@@ -228,7 +305,9 @@ section.client__wrapper .client__cards-wrapper .client__cards .client__card-text
 
 
 
+/* Prices Start */
 
+/* Prices End */
 
 
 
