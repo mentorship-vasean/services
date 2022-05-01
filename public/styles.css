@@ -8,6 +8,7 @@ header.header__wrapper {
   width: 100%;
   height: 91px;
   position: fixed;
+  z-index: 10;
   top: 0;
   right: 0;
   padding: 0 95px;
@@ -306,6 +307,149 @@ section.client__wrapper .client__cards-wrapper .client__cards .client__card-text
 
 
 /* Prices Start */
+section.pricing__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 150px;
+}
+section.pricing__wrapper .pricing__heading-wrapper{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 55px;
+    
+}
+section.pricing__wrapper h2.pricing__heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: .2px;
+  margin-bottom: 12px;
+}
+
+section.pricing__wrapper p.pricing__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: .2px; 
+  max-width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section.pricing__wrapper .pricing__cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-evenly; 
+}
+section.pricing__wrapper .pricing__cards-wrapper .pricing__card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  color: #000;
+  background-color: #fff;
+  height: 670px;
+  border-radius: 10px;
+  padding: 50px 40px;
+}
+section.pricing__wrapper .pricing__cards-wrapper .pricing__card-wrapper span.pricing__card-badge {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
+  top: -45px;
+  right: 15px;
+  background: #e77c40;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: .1px;
+
+}
+section.pricing__wrapper .pricing__cards-wrapper .pricing__card-wrapper h3.pricing__card-heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: .1px;
+}
+section.pricing__wrapper .pricing__cards-wrapper .pricing__card-wrapper p.pricing__card-description {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: .1px;
+  color: #737373;
+  max-width: 160px;
+}
+section.pricing__wrapper .pricing__cards-wrapper .pricing__card-wrapper h4.pricing__card-price {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: .2px;
+  color: #23a6f0;
+}
+section.pricing__wrapper .pricing__cards-wrapper .pricing__card-wrapper p.pricing__card-price__tag {
+  color: #23a6f0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: .1px;
+
+}
+section.pricing__wrapper .pricing__cards-wrapper .pricing__card-wrapper button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 100%;
+  background: #23a6f0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: .2px;
+  
+}
+section.pricing__wrapper .pricing__cards-wrapper .pricing__card-wrapper ul.pricing__features-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+
+}
+section.pricing__wrapper .pricing__cards-wrapper .pricing__card-wrapper ul.pricing__features-wrapper li.pricing__features::before{
+ content: "✔";
+ position: relative;
+ color: #fff;
+ background-color: #2DC071;
+ border-radius: 50%;
+ font-size: 15px;
+ margin-right: 5px;
+ padding: 7px 10px;
+}
+section.pricing__wrapper .pricing__cards-wrapper .pricing__card-wrapper ul.pricing__features-wrapper li.pricing__features {
+font-size: 14px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: .2px;
+white-space: nowrap;
+}
 
 /* Prices End */
 
@@ -337,7 +481,6 @@ section.client__wrapper .client__cards-wrapper .client__cards .client__card-text
 footer {
   color: #fff;
   font-family: Montserrat;
-  font-weight: 100;
 }
 .footer__heading {
   display: flex;
