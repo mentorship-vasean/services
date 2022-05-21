@@ -351,6 +351,159 @@ section.client__wrapper
 
 /* Client End */
 
+/*About Us Start */
+section.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  color: #fff;
+  width: 100%;
+}
+
+section.about__wrapper div.about__heading-wrapper {
+  text-align: center;
+  margin-bottom: 55px;
+  width: 65%;
+}
+
+section.about__wrapper div.about__heading-wrapper h1.about__heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  margin-bottom: 12px;
+}
+
+section.about__wrapper div.about__heading-wrapper p.about__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  max-width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section.about__wrapper div.about__content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin-bottom: 175px;
+}
+
+section.about__wrapper div.about__video-wrapper {
+  width: 60%;
+  position: relative;
+}
+section.about__wrapper div.about__video-wrapper video {
+  height: 100%;
+  width: 100%;
+}
+section.about__wrapper div.about__video-wrapper i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #24a6f0;
+  height: 70px;
+  width: 70px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+section.about__wrapper
+  div.about__content-wrapper
+  div.about__video-text__wrapper {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+section.about__wrapper
+  div.about__content-wrapper
+  div.about__video-text__wrapper
+  div.about__video-heading-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+section.about__wrapper
+  div.about__content-wrapper
+  div.about__video-text__wrapper
+  div.about__video-heading-wrapper
+  h2.about__video-heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+}
+section.about__wrapper
+  div.about__content-wrapper
+  div.about__video-text__wrapper
+  div.about__video-heading-wrapper
+  p.about__video-heading-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+section.about__wrapper
+  div.about__content-wrapper
+  div.about__video-text__wrapper
+  div.about__video-quote__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 15px;
+
+}
+section.about__wrapper
+  div.about__content-wrapper
+  div.about__video-text__wrapper
+  div.about__video-quote__wrapper
+  img {
+    height: 35px ;
+    width: 35px;
+}
+
+section.about__wrapper
+  div.about__content-wrapper
+  div.about__video-text__wrapper
+  div.about__video-quote__wrapper
+  div.about__video-quote-text__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    
+}
+section.about__wrapper
+  div.about__content-wrapper
+  div.about__video-text__wrapper
+  div.about__video-quote__wrapper
+  div.about__video-quote-text__wrapper h3.about__video-quote-header {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  div.about__content-wrapper
+  div.about__video-text__wrapper
+  div.about__video-quote__wrapper
+  div.about__video-quote-text__wrapper p.about__video-quote-text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+/* About Us End */
+
 /* Prices Start */
 section.pricing__wrapper {
   display: flex;
@@ -392,7 +545,7 @@ section.pricing__wrapper .pricing__cards-wrapper {
   width: 100%;
   gap: 30px;
   align-items: center;
-  justify-content: space-between
+  justify-content: space-between;
 }
 section.pricing__wrapper .pricing__cards-wrapper .pricing__card-wrapper {
   display: flex;
@@ -537,21 +690,21 @@ section.contact__wrapper div.contact__header-wrapper {
   flex-direction: column;
   text-align: center;
   max-width: 80%;
-  margin-bottom: 235px;
+  margin-bottom: 135px;
 }
 
 section.contact__wrapper div.contact__header-wrapper h1.contact__heading {
   font-size: 40px;
-    font-weight: 700;
-    line-height: 57px;
-    letter-spacing: .2px;
-    margin-bottom: 12px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  margin-bottom: 12px;
 }
 section.contact__wrapper div.contact__header-wrapper p.contact__text {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
   max-width: 60%;
   text-align: center;
   margin: 0 auto;
@@ -567,66 +720,88 @@ section.contact__wrapper div.contact__cards-wrapper div.contact__card-wrapper {
   align-items: center;
   justify-content: center;
   height: 343px;
-  width:100%;
+  width: 100%;
   background: #fff;
   color: #000;
-  
 }
-section.contact__wrapper div.contact__cards-wrapper div.contact__card-wrapper.middle {
+section.contact__wrapper
+  div.contact__cards-wrapper
+  div.contact__card-wrapper.middle {
   height: 395px;
   position: relative;
   top: -25px;
   background: #23a6f0;
   color: #fff;
 }
-section.contact__wrapper div.contact__cards-wrapper div.contact__card-wrapper.middle i.contact__card-image {
+section.contact__wrapper
+  div.contact__cards-wrapper
+  div.contact__card-wrapper.middle
+  i.contact__card-image {
   color: #fff;
 }
-section.contact__wrapper div.contact__cards-wrapper div.contact__card-wrapper i.contact__card-image {
+section.contact__wrapper
+  div.contact__cards-wrapper
+  div.contact__card-wrapper
+  i.contact__card-image {
   font-size: 72px;
   margin-bottom: 15px;
   color: #23a6f0;
 }
-section.contact__wrapper div.contact__cards-wrapper div.contact__card-wrapper p.contact__card-email {
+section.contact__wrapper
+  div.contact__cards-wrapper
+  div.contact__card-wrapper
+  p.contact__card-email {
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
   margin-bottom: 15px;
-
 }
 
-section.contact__wrapper div.contact__cards-wrapper div.contact__card-wrapper h2.contact__card-support {
+section.contact__wrapper
+  div.contact__cards-wrapper
+  div.contact__card-wrapper
+  h2.contact__card-support {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  letter-spacing: .1px;
+  letter-spacing: 0.1px;
   margin-bottom: 15px;
 }
 
-section.contact__wrapper div.contact__cards-wrapper div.contact__card-wrapper button.contact__card-button {
+section.contact__wrapper
+  div.contact__cards-wrapper
+  div.contact__card-wrapper
+  button.contact__card-button {
   background: transparent;
-  transition: all ease-in-out .3ms;
+  transition: all ease-in-out 0.3ms;
   height: 54px;
   width: 50%;
   border-radius: 37px;
   border: 1px #23a6f0 solid;
   color: #23a6f0;
 }
-section.contact__wrapper div.contact__cards-wrapper div.contact__card-wrapper button.contact__card-button:hover {
-  background-color: rgba(35, 166, 240, .8);
+section.contact__wrapper
+  div.contact__cards-wrapper
+  div.contact__card-wrapper
+  button.contact__card-button:hover {
+  background-color: rgba(35, 166, 240, 0.8);
   color: #fff;
 }
-section.contact__wrapper div.contact__cards-wrapper div.contact__card-wrapper.middle button.contact__card-button:hover {
-  background-color: rgba(255, 255, 255, .9);
+section.contact__wrapper
+  div.contact__cards-wrapper
+  div.contact__card-wrapper.middle
+  button.contact__card-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
   color: #23a6f0;
 }
-section.contact__wrapper div.contact__cards-wrapper div.contact__card-wrapper.middle button.contact__card-button {
+section.contact__wrapper
+  div.contact__cards-wrapper
+  div.contact__card-wrapper.middle
+  button.contact__card-button {
   border: 1px #fff solid;
   color: #fff;
 }
-
-
 
 /* Contact us end */
 
