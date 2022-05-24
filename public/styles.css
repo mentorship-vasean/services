@@ -1,6 +1,6 @@
+
 body {
   background-color: #252b42;
-  /* padding: 0 80px; */
   margin: 0 auto;
 }
 /* Start Header */
@@ -85,7 +85,7 @@ section div.hero__text-wrapper {
   align-items: center;
   justify-content: center;
   text-align: center;
-  max-width: 685px;
+  max-width: 780px;
   gap: 40px;
 }
 section div.hero__text-wrapper h1.hero__heading {
@@ -150,6 +150,60 @@ section
   button.hero__button-learn:hover {
   background-color: rgb(180, 180, 180);
   color: black;
+}
+@media only screen and (max-width: 768px) {
+  section.hero__wrapper {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Montserrat;
+  }
+  section div.hero__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 780px;
+    gap: 40px;
+  }
+  section div.hero__text-wrapper h1.hero__heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+  }
+  
+  section div.hero__text-wrapper p.hero__text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    max-width: 75%;
+  }
+  
+  section div.hero__text-wrapper div.hero__button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  section div.hero__text-wrapper div.hero__button-wrapper button {
+    border-radius: 37px;
+    padding: 10px 36px;
+    height: 52px;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+  }
 }
 /* Hero End */
 
@@ -348,7 +402,54 @@ section.client__wrapper
   letter-spacing: 0.2px;
   color: #737373;
 }
-
+@media only screen and (max-width: 768px) {
+  section.client__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+    color: #fff;
+    width: 100%;
+  }
+  section.client__wrapper .client__heading-wrapper {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  section.client__wrapper h2.client__heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    margin-bottom: 12px;
+  }
+  
+  section.client__wrapper p.client__text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  section.client__wrapper .client__cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 175px;
+    width: 328px;
+  }
+  
+  section.client__wrapper .client__cards-wrapper .client__cards {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: black;
+  }
+}
 /* Client End */
 
 /*About Us Start */
@@ -502,6 +603,122 @@ section.about__wrapper
     line-height: 24px;
     font-weight: 600;
   }
+  @media only screen and (max-width: 768px) {
+    section.about__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: Montserrat;
+      color: #fff;
+      width: 100%;
+    }
+    
+    section.about__wrapper div.about__heading-wrapper {
+      text-align: center;
+      margin-bottom: 55px;
+      width: 100%;
+    }
+    
+    section.about__wrapper div.about__heading-wrapper h1.about__heading {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 57px;
+      letter-spacing: 0.2px;
+      margin-bottom: 12px;
+    }
+    
+    section.about__wrapper div.about__heading-wrapper p.about__text {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      max-width: 60%;
+      text-align: center;
+      margin: 0 auto;
+    }
+    
+    section.about__wrapper div.about__content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 100px;
+      margin-bottom: 175px;
+    }
+    
+    section.about__wrapper div.about__video-wrapper {
+      width: 60%;
+      position: relative;
+    }
+    section.about__wrapper div.about__video-wrapper video {
+      height: 100%;
+      width: 100%;
+    }
+    section.about__wrapper div.about__video-wrapper i {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #24a6f0;
+      height: 70px;
+      width: 70px;
+      font-size: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    
+    section.about__wrapper
+      div.about__content-wrapper
+      div.about__video-text__wrapper {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 60px;
+    }
+    section.about__wrapper
+      div.about__content-wrapper
+      div.about__video-text__wrapper
+      div.about__video-heading-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+    section.about__wrapper
+      div.about__content-wrapper
+      div.about__video-text__wrapper
+      div.about__video-heading-wrapper
+      h2.about__video-heading {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: 0.1px;
+    }
+    section.about__wrapper
+      div.about__content-wrapper
+      div.about__video-text__wrapper
+      div.about__video-heading-wrapper
+      p.about__video-heading-text {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+    }
+    section.about__wrapper
+      div.about__content-wrapper
+      div.about__video-text__wrapper
+      div.about__video-quote__wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 15px;
+  }
+}
 /* About Us End */
 
 /* Prices Start */
@@ -670,7 +887,62 @@ section.pricing__wrapper
   letter-spacing: 0.2px;
   white-space: nowrap;
 }
-
+@media only screen and (max-width: 768px) {
+  section.pricing__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 150px;
+  }
+  section.pricing__wrapper .pricing__heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  section.pricing__wrapper h2.pricing__heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    margin-bottom: 12px;
+  }
+  
+  section.pricing__wrapper p.pricing__text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  section.pricing__wrapper .pricing__cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 55px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  section.pricing__wrapper .pricing__cards-wrapper .pricing__card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    color: #000;
+    background-color: #fff;
+    height: 670px;
+    border-radius: 10px;
+    padding: 50px 40px;
+  }
+}
 /* Prices End */
 
 /* Contact us start */
@@ -802,7 +1074,30 @@ section.contact__wrapper
   border: 1px #fff solid;
   color: #fff;
 }
-
+@media only screen and (max-width: 768px) {
+  section.contact__wrapper div.contact__header-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  section.contact__wrapper div.contact__cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 67%;
+    gap: 60px;
+  }
+  section.contact__wrapper
+  div.contact__cards-wrapper
+  div.contact__card-wrapper.middle {
+  height: 343px;
+  position: relative;
+  top: 0px;
+  background: #23a6f0;
+  color: #fff;
+  }
+}
 /* Contact us end */
 
 /* Start Footer */
@@ -909,5 +1204,25 @@ footer p.disclaimer {
   letter-spacing: 0.2px;
   text-align: center;
   margin-top: 24px;
+}
+
+@media only screen and (max-width: 780px) {
+  .footer__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  hr.footer__line {
+    border: 1px solid #e6e6e6;
+    margin: 53px 0;
+    width: 25%;
+  }
+  .footer__menu__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
 }
 /* End Footer */
