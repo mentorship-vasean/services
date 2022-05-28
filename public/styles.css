@@ -1,9 +1,9 @@
-
 body {
   background-color: #252b42;
   margin: 0 auto;
 }
 /* Start Header */
+
 header.header__wrapper {
   width: 100%;
   height: 91px;
@@ -67,7 +67,65 @@ header .header__button-wrapper button.header__button-member {
   width: 100%;
   padding: 0px 25px;
 }
+@media only screen and (max-width: 768px) {
+  header {
+    background-color: rgba(37, 43, 66, .9);
+  }  
+  header.header__wrapper {
+    display: none;
+  }
+}
 /* End Header */
+
+/*  Start Mobile Header */
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    padding:0 30px;
+    padding-bottom: 12px;
+    font-family: Montserrat;
+    font-size: 24px;
+    color: #fff;
+  }
+  .flexed {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding-top: 55px;
+  }
+  .mobile-header__logo {
+    font-weight: 700;
+  }
+  .mobile-header__wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+  }
+  .mobile-header__icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  nav.mobile-header__menu-items__wrapper {
+    display: none;
+  }
+  ul.mobile-header__menu-items {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    gap: 20px;
+  }
+}
+/*  End Mobile Header */
 
 /* Hero Start */
 section.hero__wrapper {
@@ -176,7 +234,7 @@ section
     line-height: 57px;
     letter-spacing: 0.2px;
   }
-  
+
   section div.hero__text-wrapper p.hero__text {
     font-size: 20px;
     font-weight: 500;
@@ -184,7 +242,7 @@ section
     letter-spacing: 0.2px;
     max-width: 75%;
   }
-  
+
   section div.hero__text-wrapper div.hero__button-wrapper {
     display: flex;
     flex-direction: column;
@@ -192,17 +250,7 @@ section
     gap: 10px;
   }
   section div.hero__text-wrapper div.hero__button-wrapper button {
-    border-radius: 37px;
-    padding: 10px 36px;
-    height: 52px;
-    width: auto;
-    color: #fff;
-    background: transparent;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 22px;
-    letter-spacing: 0.2px;
+    width: 215px;
   }
 }
 /* Hero End */
@@ -423,7 +471,7 @@ section.client__wrapper
     letter-spacing: 0.2px;
     margin-bottom: 12px;
   }
-  
+
   section.client__wrapper p.client__text {
     font-size: 14px;
     font-weight: 500;
@@ -433,7 +481,7 @@ section.client__wrapper
     text-align: center;
     margin: 0 auto;
   }
-  
+
   section.client__wrapper .client__cards-wrapper {
     display: flex;
     flex-direction: column;
@@ -442,7 +490,7 @@ section.client__wrapper
     margin-bottom: 175px;
     width: 328px;
   }
-  
+
   section.client__wrapper .client__cards-wrapper .client__cards {
     display: flex;
     flex-direction: column;
@@ -518,6 +566,9 @@ section.about__wrapper div.about__video-wrapper i {
   border-radius: 50%;
   cursor: pointer;
 }
+section.about__wrapper div.about__video-wrapper i.fa-solid.fa-pause {
+  display: none;
+}
 
 section.about__wrapper
   div.about__content-wrapper
@@ -565,15 +616,14 @@ section.about__wrapper
   flex-direction: row;
   align-items: flex-start;
   gap: 15px;
-
 }
 section.about__wrapper
   div.about__content-wrapper
   div.about__video-text__wrapper
   div.about__video-quote__wrapper
   img {
-    height: 35px ;
-    width: 35px;
+  height: 35px;
+  width: 35px;
 }
 
 section.about__wrapper
@@ -581,142 +631,150 @@ section.about__wrapper
   div.about__video-text__wrapper
   div.about__video-quote__wrapper
   div.about__video-quote-text__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 section.about__wrapper
   div.about__content-wrapper
   div.about__video-text__wrapper
   div.about__video-quote__wrapper
-  div.about__video-quote-text__wrapper h3.about__video-quote-header {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
-  }
-  div.about__content-wrapper
+  div.about__video-quote-text__wrapper
+  h3.about__video-quote-header {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+div.about__content-wrapper
   div.about__video-text__wrapper
   div.about__video-quote__wrapper
-  div.about__video-quote-text__wrapper p.about__video-quote-text {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 600;
+  div.about__video-quote-text__wrapper
+  p.about__video-quote-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+  section.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+    color: #fff;
+    width: 100%;
   }
-  @media only screen and (max-width: 768px) {
-    section.about__wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-family: Montserrat;
-      color: #fff;
-      width: 100%;
-    }
-    
-    section.about__wrapper div.about__heading-wrapper {
-      text-align: center;
-      margin-bottom: 55px;
-      width: 100%;
-    }
-    
-    section.about__wrapper div.about__heading-wrapper h1.about__heading {
-      font-size: 40px;
-      font-weight: 700;
-      line-height: 57px;
-      letter-spacing: 0.2px;
-      margin-bottom: 12px;
-    }
-    
-    section.about__wrapper div.about__heading-wrapper p.about__text {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 20px;
-      letter-spacing: 0.2px;
-      max-width: 60%;
-      text-align: center;
-      margin: 0 auto;
-    }
-    
-    section.about__wrapper div.about__content-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 100px;
-      margin-bottom: 175px;
-    }
-    
-    section.about__wrapper div.about__video-wrapper {
-      width: 60%;
-      position: relative;
-    }
-    section.about__wrapper div.about__video-wrapper video {
-      height: 100%;
-      width: 100%;
-    }
-    section.about__wrapper div.about__video-wrapper i {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #24a6f0;
-      height: 70px;
-      width: 70px;
-      font-size: 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-    
-    section.about__wrapper
-      div.about__content-wrapper
-      div.about__video-text__wrapper {
-      width: 75%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 60px;
-    }
-    section.about__wrapper
-      div.about__content-wrapper
-      div.about__video-text__wrapper
-      div.about__video-heading-wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      width: 100%;
-    }
-    section.about__wrapper
-      div.about__content-wrapper
-      div.about__video-text__wrapper
-      div.about__video-heading-wrapper
-      h2.about__video-heading {
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 32px;
-      letter-spacing: 0.1px;
-    }
-    section.about__wrapper
-      div.about__content-wrapper
-      div.about__video-text__wrapper
-      div.about__video-heading-wrapper
-      p.about__video-heading-text {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 20px;
-      letter-spacing: 0.2px;
-    }
-    section.about__wrapper
-      div.about__content-wrapper
-      div.about__video-text__wrapper
-      div.about__video-quote__wrapper {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 15px;
+
+  section.about__wrapper div.about__heading-wrapper {
+    text-align: center;
+    margin-bottom: 55px;
+    width: 100%;
+  }
+
+  section.about__wrapper div.about__heading-wrapper h1.about__heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    margin-bottom: 12px;
+  }
+
+  section.about__wrapper div.about__heading-wrapper p.about__text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  section.about__wrapper div.about__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 175px;
+  }
+
+  section.about__wrapper div.about__video-wrapper {
+    width: 100%;
+    position: relative;
+  }
+  
+  section.about__wrapper div.about__video-wrapper video {
+    height: 240px;
+    width: 100%;
+  }
+  video[poster]{
+    width:100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  section.about__wrapper div.about__video-wrapper i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #24a6f0;
+    height: 70px;
+    width: 70px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+ 
+
+  section.about__wrapper
+    div.about__content-wrapper
+    div.about__video-text__wrapper {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+  }
+  section.about__wrapper
+    div.about__content-wrapper
+    div.about__video-text__wrapper
+    div.about__video-heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  section.about__wrapper
+    div.about__content-wrapper
+    div.about__video-text__wrapper
+    div.about__video-heading-wrapper
+    h2.about__video-heading {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+  }
+  section.about__wrapper
+    div.about__content-wrapper
+    div.about__video-text__wrapper
+    div.about__video-heading-wrapper
+    p.about__video-heading-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+  section.about__wrapper
+    div.about__content-wrapper
+    div.about__video-text__wrapper
+    div.about__video-quote__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
   }
 }
 /* About Us End */
@@ -911,7 +969,7 @@ section.pricing__wrapper
     letter-spacing: 0.2px;
     margin-bottom: 12px;
   }
-  
+
   section.pricing__wrapper p.pricing__text {
     font-size: 14px;
     font-weight: 500;
@@ -921,7 +979,7 @@ section.pricing__wrapper
     text-align: center;
     margin: 0 auto;
   }
-  
+
   section.pricing__wrapper .pricing__cards-wrapper {
     display: flex;
     flex-direction: column;
@@ -1089,13 +1147,25 @@ section.contact__wrapper
     gap: 60px;
   }
   section.contact__wrapper
-  div.contact__cards-wrapper
-  div.contact__card-wrapper.middle {
-  height: 343px;
-  position: relative;
-  top: 0px;
-  background: #23a6f0;
-  color: #fff;
+    div.contact__cards-wrapper
+    div.contact__card-wrapper {
+    padding: 0 30px;
+  }
+  section.contact__wrapper
+    div.contact__cards-wrapper
+    div.contact__card-wrapper
+    button.contact__card-button {
+    width: 100%;
+    border-radius: 5px;
+  }
+  section.contact__wrapper
+    div.contact__cards-wrapper
+    div.contact__card-wrapper.middle {
+    height: 343px;
+    position: relative;
+    top: 0px;
+    background: #23a6f0;
+    color: #fff;
   }
 }
 /* Contact us end */
