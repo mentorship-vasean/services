@@ -67,6 +67,9 @@ header .header__button-wrapper button.header__button-member {
   width: 100%;
   padding: 0px 25px;
 }
+header.mobile-header{
+   display: none;
+}
 @media only screen and (max-width: 768px) {
   header {
     background-color: rgba(37, 43, 66, .9);
@@ -79,9 +82,10 @@ header .header__button-wrapper button.header__button-member {
 
 /*  Start Mobile Header */
 @media only screen and (max-width: 768px) {
-  header {
+  header.mobile-header {
     width: 100%;
     height: auto;
+    display: block;
     position: fixed;
     z-index: 10;
     top: 0;
