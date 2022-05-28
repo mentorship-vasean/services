@@ -1287,12 +1287,15 @@ footer p.disclaimer {
   hr.footer__line {
     border: 1px solid #e6e6e6;
     margin: 53px 0;
-    width: 25%;
+    width: 100%;
   }
   .footer__menu__wrapper {
     display: flex;
     flex-direction: column;
     gap: 35px;
   }
+  .footer__menu__wrapper .footer__menu-items__wrapper h6 {
+    font-size: 25px;
+}
 }
 /* End Footer */
