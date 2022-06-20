@@ -26,6 +26,10 @@ header .header__logo {
   letter-spacing: 0.1px;
   /* color: #FFFFFF; */
 }
+header .header__menu-items__wrapper {
+  margin-left: 90px;
+  margin-right: 20px;
+}
 
 header nav ul.header__menu-items {
   display: flex;
